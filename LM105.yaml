@@ -1,0 +1,40 @@
+evolver:
+  population_size: 100
+  max_iterations: 100
+  min_iterations: 50
+  temperature: 500
+  targets:
+    maximise:
+      - Dmax
+      - deltaT
+    minimise:
+      - price
+  constraints:
+    allowed_elements:
+      - Zr
+      - Ti
+      - Cu
+      - Ni
+      - Al
+    percentage_step: 0.005
+    percentages:
+      Zr:
+        min: 0.47
+        max: 0.60
+      Ti:
+        min: 0.02
+        max: 0.06
+      Cu:
+        min: 0.12
+        max: 0.24
+      Ni:
+        min: 0.0
+        max: 0.3
+      Al:
+        min: 0.05
+        max: 0.15
+  model: /path/to/model
+  model_uncertainty: False
+  verbosity: 1
+output_directory: ./output
+repeats: 1
