@@ -36,3 +36,6 @@ python3 __main__.py Dmax.yaml
 
 Custom YAML files may easily be created and invoked in a similar way. 
 
+Running __main__.py will perform the search as configured, and will output a
+variety of figures and data-files to the output directory, describing the alloy
+population it observed.
