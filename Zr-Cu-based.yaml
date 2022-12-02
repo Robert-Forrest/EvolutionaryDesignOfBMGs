@@ -1,0 +1,88 @@
+evolver:
+  population_size: 100
+  max_iterations: 100
+  min_iterations: 50
+  temperature: 500
+  targets:
+    maximise:
+      - Dmax
+      - deltaT
+    minimise:
+      - price
+  constraints:
+    allowed_elements:
+      - Li
+      - Be
+      - B
+      - C
+      - Na
+      - Mg
+      - Al
+      - Si
+      - P
+      - K
+      - Ca
+      - Sc
+      - Ti
+      - V
+      - Cr
+      - Mn
+      - Fe
+      - Co
+      - Ni
+      - Cu
+      - Zn
+      - Ga
+      - Ge
+      - Rb
+      - Sr
+      - Y
+      - Zr
+      - Nb
+      - Mo
+      - Tc
+      - Ru
+      - Rh
+      - Pd
+      - Ag
+      - Cd
+      - In
+      - Sn
+      - Sb
+      - Te
+      - Ba
+      - Lu
+      - Hf
+      - Ta
+      - W
+      - Re
+      - Os
+      - Ir
+      - Pt
+      - Au
+      - Tl
+      - Pb
+      - Bi
+      - La
+      - Ce
+      - Pr
+      - Nd
+      - Sm
+      - Gd
+      - Tb
+      - Dy
+      - Ho
+      - Er
+      - Tm
+      - Yb
+    percentage_step: 0.0001
+    percentages:
+      Zr:
+        precedence: 1
+      Cu:
+        precedence: 1
+  model: /path/to/model
+  model_uncertainty: False
+  verbosity: 1
+output_directory: ./output
+repeats: 1
