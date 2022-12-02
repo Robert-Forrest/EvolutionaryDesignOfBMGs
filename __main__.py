@@ -8,7 +8,7 @@ import seaborn as sns
 import metallurgy as mg
 
 import evomatic as evo
-from novelty import novelty
+
 
 if __name__ == "__main__":
 
@@ -20,7 +20,6 @@ if __name__ == "__main__":
     conf = OmegaConf.load(args.config)
 
     evolver_conf = dict(conf.evolver)
-    evolver_conf["postprocess"] = novelty
 
     repeats = conf.get("repeats", 1)
     overall_history = pd.DataFrame([])
